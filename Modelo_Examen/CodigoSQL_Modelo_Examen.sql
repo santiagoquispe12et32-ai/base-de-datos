@@ -42,7 +42,7 @@ create table PedidoComps
 );
 
 
-
+--Use la IA para generar datos randoms
 INSERT INTO Clientes (Nombre, Apellido, correo, Direccion) 
 VALUES 
 ('Carlos', 'Gómez', 'carlos.gomez@email.com', 'Av. Corrientes 1234'),
