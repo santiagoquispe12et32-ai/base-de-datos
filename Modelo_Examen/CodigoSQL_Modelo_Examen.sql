@@ -107,10 +107,9 @@ inner join pedidos p on c.id_cliente = p.id_cliente;
 
 -- Consulta 5
 
-SELECT c.Nombre, c.Apellido, p.Fecha
+SELECT c.Nombre, c.Apellido, MAX(p.Fecha)
 FROM Clientes c
-INNER JOIN Pedidos p ON c.id_cliente = p.id_cliente
-WHERE p.Fecha = (SELECT MAX(Fecha) FROM Pedidos);
+INNER JOIN Pedidos p ON c.id_cliente = p.id_cliente;
 
 -- Consulta 6
 
@@ -122,6 +121,5 @@ where p.Estado = 'Pendiente';
 
 -- Consulta 7
 
-SELECT Nombre, Precio
+SELECT Nombre, MAX(Precio)
 FROM Productos
-WHERE Precio = (SELECT MAX(Precio) FROM Productos);
