@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Estilo.css">
+
+    <style>
+        .img-fluid{
+            opacity: 0.5;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1 class="text-center my-4">BIOGRAFIA</h1>
+    
+    <!-- Centered Button Container -->
+    <div class="d-flex justify-content-center gap-2 mb-4">
+        <!-- Button 1: Santiago Quispe -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#biografiaModal1">
+            SANTIAGO QUISPE
+        </button>
+
+        <!-- Button 2: Alessio Acosta -->
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#biografiaModal">
+            ALESSIO ACOSTA
+        </button>
+    </div>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGc_xBe83AqqqG3vcKXQNOBvPSQVh2abLp37j3rVzwg&s=10 " class="img-fluid" alt="Foto tonta">
+
+    <!-- Bootstrap Modal Structure -->
+    <div class="modal fade" id="biografiaModal1" tabindex="-1" aria-labelledby="biografiaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              
+                <!-- Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="biografiaModalLabel">Biografia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+              
+                <!-- Body with profile picture and text -->
+                <div class="modal-body text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMJLAqwQO-64ALhGRcIHm0yXa6AB1LwkJ_kwPyXoLOEg&s" class=".rounded-0" alt="Foto de perfil" width="200" height="200">
+                    <h5>Santiago Quispe</h5>
+                    <p class="text-muted big">Jugador profesional de YBA (ROBLOX)</p>
+                    <p class="text-start px-3">
+                        Este soy yo
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="biografiaModal" tabindex="-1" aria-labelledby="biografiaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              
+                <!-- Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="biografiaModalLabel">Biografia.</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+              
+                <!-- Body with profile picture and text -->
+                <div class="modal-body text-center">
+                    <img src="https://static.wikia.nocookie.net/ficcion-sin-limites/images/7/74/Fugo.png/revision/latest/scale-to-width-down/400?cb=20210102022542&path-prefix=es" class="rounded-circle mb-3" alt="Foto de perfil" width="200" height="200">
+                    <h5>Alessio Acosta.</h5>
+                    <p class="text-muted small">Jugador profesional de naruto ultimate ninja storm 4.</p>
+                    <p class="text-start px-3">
+                        me llamo alessio acosta me gusta ugar a lo uejitos :v cff
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
