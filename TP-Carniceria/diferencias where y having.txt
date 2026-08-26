@@ -1,0 +1,4 @@
+¿Cuál es la diferencia entre Where y Having?
+
+La diferencia principal es que el, having funciona en conjunto con el group by y se usa en funciones de agregacion, mientras que el where
+funciona para filtrar registros segun una condicion.

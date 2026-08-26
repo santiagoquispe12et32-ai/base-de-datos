@@ -1,0 +1,4 @@
+a. Un Where puede funcionar como un Inner join en algunas ocasiones. Verdadero. 
+b. No puedo crear una tabla sin una Primary Key. Falso, existen un tipo de tablas que no usan una primary key y que no estan ordenadas.
+c. Las Subconsulta solamente las puedo usar con Where. Falso, tambien se pueden hacer con inner join.
+d. En el From puedo poner más de una tabla si es necesario. Verdadero.
