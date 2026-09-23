@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DER · SQL-DEX</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="dex-shell">
+  <div class="dex-header">
+    <div class="dex-lente"></div>
+    <div class="dex-lucecita luz-amarilla"></div>
+    <div class="dex-lucecita luz-verde"></div>
+    <div class="dex-lucecita luz-roja"></div>
+    <div class="ms-2">
+      <p class="dex-titulo mb-0">SQL-DEX</p>
+      <p class="dex-subtitulo mb-0">Enciclopedia de SQL</p>
+    </div>
+  </div>
+
+  <div class="dex-body">
+    <div class="dex-lista-panel">
+      <div class="dex-lista-header">CATEGORÍAS</div>
+      <div class="dex-lista">
+        <a href="../index.html" class="dex-entrada"><span class="dex-num">000</span> Introducción</a>
+<a href="../paginas/select.html" class="dex-entrada"><span class="dex-num">001</span> SELECT</a>
+<a href="../paginas/where.html" class="dex-entrada"><span class="dex-num">002</span> WHERE</a>
+<a href="../paginas/der.html" class="dex-entrada activa"><span class="dex-num">003</span> DER</a>
+<a href="../paginas/consultas.html" class="dex-entrada"><span class="dex-num">004</span> CONSULTAS</a>
+<a href="../paginas/subconsultas.html" class="dex-entrada"><span class="dex-num">005</span> SUBCONSULTAS</a>
+<a href="../paginas/inner-join.html" class="dex-entrada"><span class="dex-num">006</span> INNER JOIN</a>
+<a href="../paginas/having.html" class="dex-entrada"><span class="dex-num">007</span> HAVING</a>
+<a href="../paginas/left-join.html" class="dex-entrada"><span class="dex-num">008</span> LEFT JOIN</a>
+<a href="../paginas/right-join.html" class="dex-entrada"><span class="dex-num">009</span> RIGHT JOIN</a>
+<a href="../paginas/normalizacion.html" class="dex-entrada"><span class="dex-num">010</span> NORMALIZACIÓN</a>
+<a href="../paginas/diccionario-datos.html" class="dex-entrada"><span class="dex-num">011</span> DICCIONARIO DE DATOS</a>
+      </div>
+    </div>
+
+    <div class="dex-pantalla-panel">
+      <div class="dex-pantalla">
+        <p class="dex-ficha-num mb-1">N.º 003</p>
+        <h2>DER</h2>
+        <span class="dex-tipo tipo-modelado">Modelado de datos</span>
+        <p>El Diagrama Entidad-Relación es el mapa de la base de datos: muestra las entidades (tablas), sus atributos y cómo se relacionan entre sí, antes de escribir una sola línea de SQL.</p>
+
+        <div class="dex-svg-wrap">
+<svg viewBox="0 0 520 160" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="30" width="160" height="90" rx="6" fill="#0e2a17" stroke="#4fd66b" stroke-width="2"/>
+  <text x="90" y="55" fill="#eafff0" font-size="14" text-anchor="middle" font-family="Trebuchet MS">ALUMNO</text>
+  <text x="90" y="78" fill="#b6f2c1" font-size="11" text-anchor="middle" font-family="monospace">id_alumno (PK)</text>
+  <text x="90" y="96" fill="#b6f2c1" font-size="11" text-anchor="middle" font-family="monospace">nombre</text>
+
+  <rect x="350" y="30" width="160" height="90" rx="6" fill="#0e2a17" stroke="#4fd66b" stroke-width="2"/>
+  <text x="430" y="55" fill="#eafff0" font-size="14" text-anchor="middle" font-family="Trebuchet MS">CURSO</text>
+  <text x="430" y="78" fill="#b6f2c1" font-size="11" text-anchor="middle" font-family="monospace">id_curso (PK)</text>
+  <text x="430" y="96" fill="#b6f2c1" font-size="11" text-anchor="middle" font-family="monospace">nombre</text>
+
+  <rect x="195" y="55" width="120" height="42" rx="6" fill="#173a22" stroke="#ffcc33" stroke-width="2"/>
+  <text x="255" y="80" fill="#ffcc33" font-size="11" text-anchor="middle" font-family="monospace">INSCRIPCION</text>
+
+  <line x1="170" y1="75" x2="195" y2="75" stroke="#eafff0" stroke-width="2"/>
+  <line x1="315" y1="75" x2="350" y2="75" stroke="#eafff0" stroke-width="2"/>
+  <text x="180" y="70" fill="#eafff0" font-size="10">1</text>
+  <text x="190" y="70" fill="#eafff0" font-size="10">N</text>
+  <text x="322" y="70" fill="#eafff0" font-size="10">N</text>
+  <text x="340" y="70" fill="#eafff0" font-size="10">1</text>
+</svg>
+</div>
+
+        <h3 class="h6 mt-3">Sintaxis</h3>
+        <pre>ENTIDAD
+  - atributo (PK)
+  - atributo
+  ----< relación >----  OTRA_ENTIDAD</pre>
+
+        <h3 class="h6 mt-3">Ejemplo</h3>
+        <pre>ALUMNO (id_alumno PK, nombre)
+   1 ----< N   INSCRIPCION >---- N   1   CURSO (id_curso PK, nombre)</pre>
+
+        <p class="dex-nota">PK = clave primaria (identifica cada fila). FK = clave foránea (conecta con otra tabla).</p>
+      </div>
+      <div class="dex-controles">
+    <a href="../paginas/where.html" class="dex-boton">&larr; Anterior</a>
+    <a href="../index.html" class="dex-boton inicio">&#8962; Lista de categorías</a>
+    <a href="../paginas/consultas.html" class="dex-boton">Siguiente &rarr;</a>
+  </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
