@@ -1,0 +1,10 @@
+Primero con mi grupo revivimos el proyecto desde 0
+
+Me encargue de hacer el DER luego pedí una plantilla a mi grupo
+viendo también nuestro proto tipo en el figma
+
+luego de eso fui haciendo la conexión y tratarlo de conectar tuve que rehacer algunas cosas ya que
+al principio el register no funcionaba y tenías que registrarte que cada vez que querías agregar un producto
+también agregue el carrito y pude hacer que con el admin puedas eliminar usuarios y productos 
+junto con un readme en el proyecto guía para usarlo
+
